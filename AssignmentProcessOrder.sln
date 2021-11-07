@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssignmentProcessOrder", "AssignmentProcessOrder\AssignmentProcessOrder.csproj", "{CC59CFBE-2C25-4CD6-B8E0-5790EE066498}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessOrderApplication", "ProcessOrderApplication\ProcessOrderApplication.csproj", "{00649711-7558-46A4-8201-F5370CEBFEED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC59CFBE-2C25-4CD6-B8E0-5790EE066498}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC59CFBE-2C25-4CD6-B8E0-5790EE066498}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC59CFBE-2C25-4CD6-B8E0-5790EE066498}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC59CFBE-2C25-4CD6-B8E0-5790EE066498}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00649711-7558-46A4-8201-F5370CEBFEED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00649711-7558-46A4-8201-F5370CEBFEED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00649711-7558-46A4-8201-F5370CEBFEED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00649711-7558-46A4-8201-F5370CEBFEED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {94549219-0B42-4303-9075-B2F9EF1C1CB8}
+	EndGlobalSection
+EndGlobal
