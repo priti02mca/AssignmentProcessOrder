@@ -34,6 +34,7 @@ namespace AssignmentProcessOrder
         [Test]
         public void TestCaseForMembership()
         {
+            var result = ProcessOrder.GetProductTypeAndName(new string[] { "membership" });
             Assert.Pass();
         }
 

@@ -23,6 +23,11 @@ namespace ProcessOrderApplication
             string productname = input.Length > 1 ? input[1] : string.Empty;
             switch (type)
             {
+                case enums.ProductType.Membership:
+                    {
+                        product = new Membership();
+                        break;
+                    }
                 case enums.ProductType.Book:
                     {
                         product = new Book(productname);
