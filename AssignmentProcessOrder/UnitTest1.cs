@@ -35,7 +35,10 @@ namespace AssignmentProcessOrder
         public void TestCaseForMembership()
         {
             var result = ProcessOrder.GetProductTypeAndName(new string[] { "membership" });
-            Assert.Pass();
+            Assert.IsNull(result.ProductName);
+            Assert.AreEqual("Activate that membership.", result.Operations[0]);
+            Assert.AreEqual("Mail Sent to Owner.", result.Operations[1]);
+            Assert.AreEqual(2, result.Operations.Count);
         }
 
         [Test]
