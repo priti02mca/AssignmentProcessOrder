@@ -24,7 +24,11 @@ namespace AssignmentProcessOrder
         public void TestCaseForBook()
         {
             var result = ProcessOrder.GetProductTypeAndName(new string[] { "Book" });
-            Assert.Pass();
+            Assert.IsEmpty(result.ProductName);
+            Assert.AreEqual("Generated a packing slip for shipping.", result.Operations[0]);
+            Assert.AreEqual("Create a duplicate packing slip for the royalty department.", result.Operations[1]);
+            Assert.AreEqual("Added commission payment to the agent.", result.Operations[2]);
+            Assert.AreEqual(3, result.Operations.Count);
         }
 
         [Test]
