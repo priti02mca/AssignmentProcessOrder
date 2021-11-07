@@ -54,7 +54,9 @@ namespace AssignmentProcessOrder
         public void TestCaseForVideo()
         {
             var result = ProcessOrder.GetProductTypeAndName(new string[] { "Video" });
-            Assert.Pass();
+            Assert.IsEmpty(result.ProductName);
+            Assert.AreEqual("Generated a packing slip.", result.Operations[0]);
+            Assert.AreEqual(1, result.Operations.Count);
         }
 
         [Test]
