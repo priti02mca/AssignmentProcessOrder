@@ -33,6 +33,11 @@ namespace ProcessOrderApplication
                         product = new Upgrade();
                         break;
                     }
+                case enums.ProductType.Video:
+                    {
+                        product = new Video(productname);
+                        break;
+                    }
                 case enums.ProductType.Book:
                     {
                         product = new Book(productname);

@@ -53,6 +53,7 @@ namespace AssignmentProcessOrder
         [Test]
         public void TestCaseForVideo()
         {
+            var result = ProcessOrder.GetProductTypeAndName(new string[] { "Video" });
             Assert.Pass();
         }
 
