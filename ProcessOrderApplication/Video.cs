@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace ProcessOrderApplication
 {
@@ -8,7 +9,17 @@ namespace ProcessOrderApplication
         {
             ProductName = productname;
             Operations = new List<string>();
+            GenerateSlip();
+        }
+
+        public override void GenerateSlip()
+        {
             base.GenerateSlip();
+            if (ProductName.ToLower().Equals("learning to ski"))
+            {
+                Operations.Add("'First Aid' video added to the packing slip");
+                Console.WriteLine("'First Aid' video added to the packing slip");
+            }
         }
     }
 }
