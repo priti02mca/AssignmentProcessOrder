@@ -45,7 +45,9 @@ namespace AssignmentProcessOrder
         public void TestCaseForUpgrade()
         {
             var result = ProcessOrder.GetProductTypeAndName(new string[] { "upgrade" });
-            Assert.Pass();
+            Assert.AreEqual("apply the upgrade.", result.Operations[0]);
+            Assert.AreEqual("Mail Sent to Owner.", result.Operations[1]);
+            Assert.AreEqual(2, result.Operations.Count);
         }
 
         [Test]
