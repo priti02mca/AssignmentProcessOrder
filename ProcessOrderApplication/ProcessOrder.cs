@@ -8,7 +8,7 @@ namespace ProcessOrderApplication
 {
     public class ProcessOrder
     {
-        public static object GetProductTypeAndName(string[] vs)
+        public static Product GetProductTypeAndName(string[] vs)
         {
             throw new NotImplementedException();
         }
