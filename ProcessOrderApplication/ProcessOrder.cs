@@ -33,5 +33,4 @@ namespace ProcessOrderApplication
             return product;
         }
     }
-    }
 }

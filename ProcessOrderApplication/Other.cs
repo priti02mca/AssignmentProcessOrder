@@ -6,6 +6,10 @@ namespace ProcessOrderApplication
     {
         public Other(string productname)
         {
+            ProductName = productname;
+            Operations = new List<string>();
+            base.GenerateSlip();
+            base.GenerateCommission();
         }
     }
 }

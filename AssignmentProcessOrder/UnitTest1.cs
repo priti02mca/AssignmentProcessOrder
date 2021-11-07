@@ -14,7 +14,10 @@ namespace AssignmentProcessOrder
         public void TestCaseForPhisicalProduct()
         {
             var result = ProcessOrder.GetProductTypeAndName(new string[] { "Phisical Product" });
-            Assert.Pass();
+            Assert.IsEmpty(result.ProductName);
+            Assert.AreEqual("Generated a packing slip for shipping.", result.Operations[0]);
+            Assert.AreEqual("Added commission payment to the agent.", result.Operations[1]);
+            Assert.AreEqual(2, result.Operations.Count);
         }
 
         [Test]
