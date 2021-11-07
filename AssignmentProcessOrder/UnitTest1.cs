@@ -62,7 +62,8 @@ namespace AssignmentProcessOrder
         [Test]
         public void TestCaseForVideoLearningToSki()
         {
-            Assert.Pass();
+            var result = ProcessOrder.GetProductTypeAndName(new string[] { "video", "Learning To Ski" });
+            Assert.AreEqual("Learning To Ski", result.ProductName);
         }
     }
 }
