@@ -44,6 +44,7 @@ namespace AssignmentProcessOrder
         [Test]
         public void TestCaseForUpgrade()
         {
+            var result = ProcessOrder.GetProductTypeAndName(new string[] { "upgrade" });
             Assert.Pass();
         }
 

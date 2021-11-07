@@ -28,6 +28,11 @@ namespace ProcessOrderApplication
                         product = new Membership();
                         break;
                     }
+                case enums.ProductType.Upgrade:
+                    {
+                        product = new Upgrade();
+                        break;
+                    }
                 case enums.ProductType.Book:
                     {
                         product = new Book(productname);
