@@ -23,6 +23,7 @@ namespace AssignmentProcessOrder
         [Test]
         public void TestCaseForBook()
         {
+            var result = ProcessOrder.GetProductTypeAndName(new string[] { "Book" });
             Assert.Pass();
         }
 
