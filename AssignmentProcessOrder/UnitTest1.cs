@@ -13,6 +13,7 @@ namespace AssignmentProcessOrder
         [Test]
         public void TestCaseForPhisicalProduct()
         {
+            var result = ProcessOrder.GetProductTypeAndName(new string[] { "Phisical Product" });
             Assert.Pass();
         }
 
